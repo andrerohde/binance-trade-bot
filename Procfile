@@ -1,1 +1,1 @@
-web: python -m binance_trade_bot
+web: gunicorn -w 1 binance_trade_bot:app
